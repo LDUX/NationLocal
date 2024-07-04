@@ -44,20 +44,20 @@ Events.on('load', () => {
         ctx.lineWidth = 2;
     }
 
-    let speed = 1;
+    let step = 1;
 
     function drawCircles() {
         ctx.clearRect(0, 0, w, h);
         for (let i = 0; i < 5; i++) {
-            drawCircle(dw * i + speed % dw);
+            drawCircle(dw * i + step % dw);
         }
-        speed;
+        step;
     }
 
     let loading = true;
 
     function animate() {
-        if (loading || speed % dw < dw - 5) {
+        if (loading || step % dw < dw - 5) {
             requestAnimationFrame(function() {
                 drawCircles();
                 animate();
