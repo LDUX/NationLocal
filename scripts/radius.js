@@ -45,7 +45,7 @@ Events.on('load', () => {
     }
 
     let step = 0;
-    let speed = 15;
+    let speed = .5;
 
     function drawCircles() {
         ctx.clearRect(0, 0, w, h);
