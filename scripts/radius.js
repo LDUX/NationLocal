@@ -30,7 +30,7 @@ Events.on('load', () => {
         offset = h > 800 ? 116 : offset;
         x0 = w / 2;
         y0 = h - offset;
-        dw = Math.max(w, h, 1000) / 2;
+        dw = Math.max(w, h, 1000) / 3;
         drawCircles();
     }
     window.onresize = init;
