@@ -41,7 +41,7 @@ Events.on('load', () => {
         ctx.strokeStyle = 'rgba(' + color + ',' + color + ',' + color + ',0.5)';
         ctx.arc(x0, y0, radius, 0, 2 * Math.PI);
         ctx.stroke();
-        ctx.lineWidth = 10;
+        ctx.lineWidth = 2;
     }
 
     let step = 0;
