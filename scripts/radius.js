@@ -44,14 +44,14 @@ Events.on('load', () => {
         ctx.lineWidth = 2;
     }
 
-    let step = 1;
+    let step = 0;
 
     function drawCircles() {
         ctx.clearRect(0, 0, w, h);
         for (let i = 0; i < 5; i++) {
             drawCircle(dw * i + step % dw);
         }
-        step;
+        step += 1;
     }
 
     let loading = true;
