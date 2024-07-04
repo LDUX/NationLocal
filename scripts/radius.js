@@ -13,7 +13,7 @@ Events.on('load', () => {
     let c = document.createElement('canvas');
     document.body.appendChild(c);
     let style = c.style;
-    style.width = '100%';
+    style.width = '10%';
     style.position = 'absolute';
     style.zIndex = -1;
     style.top = 0;
