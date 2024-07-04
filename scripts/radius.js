@@ -51,7 +51,7 @@ Events.on('load', () => {
         for (let i = 0; i < 5; i++) {
             drawCircle(dw * i + step % dw);
         }
-        step += 1;
+        step += 4;
     }
 
     let loading = true;
