@@ -45,13 +45,14 @@ Events.on('load', () => {
     }
 
     let step = 0;
+    let speed = 1;
 
     function drawCircles() {
         ctx.clearRect(0, 0, w, h);
         for (let i = 0; i < 5; i++) {
             drawCircle(dw * i + step % dw);
         }
-        step += 1;
+        step += speed;
     }
 
     let loading = true;
