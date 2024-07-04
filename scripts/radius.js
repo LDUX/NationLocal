@@ -48,7 +48,7 @@ Events.on('load', () => {
 
     function drawCircles() {
         ctx.clearRect(0, 0, w, h);
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 15; i++) {
             drawCircle(dw * i + step % dw);
         }
         step += 1;
