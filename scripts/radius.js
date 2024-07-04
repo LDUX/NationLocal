@@ -13,7 +13,7 @@ Events.on('load', () => {
     let c = document.createElement('canvas');
     document.body.appendChild(c);
     let style = c.style;
-    style.width = '10%';
+    style.width = '100%';
     style.position = 'absolute';
     style.zIndex = -1;
     style.top = 0;
@@ -30,7 +30,7 @@ Events.on('load', () => {
         offset = h > 800 ? 116 : offset;
         x0 = w / 2;
         y0 = h - offset;
-        dw = Math.max(w, h, 1000) / 4;
+        dw = Math.max(w, h, 1000) / 40;
         drawCircles();
     }
     window.onresize = init;
